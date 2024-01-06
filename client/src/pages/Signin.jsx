@@ -29,6 +29,7 @@ const login = async () => {
       }});
       const {token} = res.data
     localStorage.setItem('token', token)
+    
   } catch (error) {
     console.error('Error during login:', error);
   }
